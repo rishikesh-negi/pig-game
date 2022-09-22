@@ -1,25 +1,29 @@
 'use strict';
 
-const nameP1 = document.getElementById('name--0');
-const nameP2 = document.getElementById('name--1');
 const totalScrP1 = document.getElementById('score--0');
 const totalScrP2 = document.getElementById('score--1');
-const currScrP1 = document.getElementById('current--0');
-const currScrP2 = document.getElementById('current--1');
 const btnNew = document.getElementById('btn-new');
 const btnRoll = document.getElementById('btn-roll');
 const btnHold = document.getElementById('btn-hold');
-const player1 = document.getElementById('player-1');
-const player2 = document.getElementById('player-2');
 const dice = document.getElementById('dice');
-const players = [player1, player2];
-const playerNames = [nameP1, nameP2];
+
+const players = [
+  document.getElementById('player-0'),
+  document.getElementById('player-1'),
+];
+const playerNames = [
+  document.getElementById('name--0'),
+  document.getElementById('name--1'),
+];
 const totals = [totalScrP1, totalScrP2];
 const numTotals = [
   Number(totalScrP1.textContent),
   Number(totalScrP2.textContent),
 ];
-const currScores = [currScrP1, currScrP2];
+const currScores = [
+  document.getElementById('current--0'),
+  document.getElementById('current--1'),
+];
 let currScr = 0;
 const winScr = 100;
 dice.classList.add('hidden');
