@@ -47,6 +47,7 @@ btnRoll.addEventListener('click', function () {
   const dieRoll = Math.trunc(Math.random() * 6) + 1;
   btnHold.classList.remove('hidden');
   dice.classList.remove('hidden');
+  dice.src = `dice-${dieRoll}.png`;
   for (let i = 0; i < 2; i++) {
     if (players[i].classList.contains('player--active') && dieRoll !== 1) {
       currScr = currScr + dieRoll;
@@ -56,19 +57,6 @@ btnRoll.addEventListener('click', function () {
       btnHold.classList.add('hidden');
       currScr = 0;
       currScores[i].textContent = currScr;
-    }
-  }
-  const dieImg = [
-    'dice-1.png',
-    'dice-2.png',
-    'dice-3.png',
-    'dice-4.png',
-    'dice-5.png',
-    'dice-6.png',
-  ];
-  for (let i = 1; i < 7; i++) {
-    if (i === dieRoll) {
-      dice.setAttribute('src', dieImg[i - 1]);
     }
   }
 });
