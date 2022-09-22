@@ -38,7 +38,7 @@ main {
 
 main .player--active {
   border-top: 20px solid #00b7eb;
-  border-right: none;
+  /* border-right: none; */
 }
 
 .player {
