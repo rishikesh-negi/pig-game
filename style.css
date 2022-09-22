@@ -48,7 +48,7 @@ main .player--active {
   flex-direction: column;
   align-items: center;
   border-radius: 25px;
-  transition: all 0.75s;
+  transition: all 0.3s;
 }
 
 /* ELEMENTS */
@@ -92,7 +92,7 @@ main .player--active {
   width: 65%;
   padding: 2rem;
   text-align: center;
-  transition: all 0.75s;
+  transition: all 0.3s;
 }
 
 .current-label {
