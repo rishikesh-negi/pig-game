@@ -48,7 +48,6 @@ main .player--active {
   flex-direction: column;
   align-items: center;
   border-radius: 25px;
-  transition: all 0.3s;
 }
 
 /* ELEMENTS */
@@ -92,7 +91,6 @@ main .player--active {
   width: 65%;
   padding: 2rem;
   text-align: center;
-  transition: all 0.3s;
 }
 
 .current-label {
@@ -169,7 +167,6 @@ main .player--active {
   transform: translateX(-50%);
   height: 10rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
-  transition: all 0.2s;
 }
 
 .winner {
