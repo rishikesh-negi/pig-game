@@ -89,7 +89,7 @@ btnNew.addEventListener('click', function () {
     playerNames[0].textContent = 'Player 1';
     playerNames[1].textContent = 'Player 2';
     btnRoll.classList.remove('hidden');
-    btnHold.classList.remove('hidden');
+    btnHold.classList.add('hidden');
     dice.classList.add('hidden');
   }
 });
