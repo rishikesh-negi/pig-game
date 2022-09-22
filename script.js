@@ -36,7 +36,7 @@ const setWinner = function () {
       btnRoll.classList.add('hidden');
       btnHold.classList.add('hidden');
 
-      players[i - 1 && i + 1].style.backgroundColor = 'rgb(250, 140, 160)';
+      players[i - 1 && i + 1].style.backgroundColor = 'rgb(250, 170, 160)';
       players[i - 1 && i + 1].classList.remove('player--active');
       players[i].classList.add('player--active', 'winner');
 
