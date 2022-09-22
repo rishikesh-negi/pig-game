@@ -170,13 +170,17 @@ main .player--active {
 }
 
 .winner {
-  background-color: rgb(180, 250, 170);
+  background-color: #444;
 }
 
 .winner .name {
   color: rgb(10, 180, 40);
   text-transform: uppercase;
   /* content: ; */
+}
+
+.winner .score {
+  color: rgb(10, 180, 40);
 }
 
 .hidden {

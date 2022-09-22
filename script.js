@@ -34,11 +34,9 @@ const setWinner = function () {
       btnRoll.classList.add('hidden');
       btnHold.classList.add('hidden');
       dice.classList.add('hidden');
-      players[i - 1 && i + 1].style.backgroundColor = 'rgb(250, 170, 160)';
       players[i - 1 && i + 1].classList.remove('player--active');
       players[i].classList.add('player--active', 'winner');
       playerNames[i].textContent = 'Winner!';
-      playerNames[i - 1 && i + 1].style.color = 'rgb(250, 0, 0)';
     }
   }
 };
